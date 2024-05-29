@@ -1,0 +1,140 @@
+/* reset simple css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+nav {
+  height: 80px;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.menus {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.menus a {
+  text-decoration: none;
+  color: black;
+}
+
+.menus a:hover {
+  opacity: 0.5;
+  transform: scale(1.5);
+  display: block;
+}
+
+.logo {
+  height: 24px;
+}
+.logo:hover {
+  opacity: 0.5;
+  transform: scale(1.5);
+}
+
+.hero {
+  padding: 2rem 0;
+}
+.hero .container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.hero--text {
+  flex: 1;
+}
+.hero--text h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-wrap: balance;
+}
+.hero--text p {
+  margin-bottom: 1rem;
+}
+.hero--illus {
+  flex: 1;
+}
+.hero--illus img {
+  width: 100%;
+}
+
+.btn {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #059669;
+  color: white;
+}
+
+.partner {
+  height: 130px;
+}
+.partner .container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  height: 100%;
+}
+.partner--item {
+  flex: 1;
+}
+.partner--item img {
+  width: 100%;
+}
+
+footer {
+  margin-top: auto;
+}
+footer .container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-top: 2px solid black;
+}
+.col {
+  flex: 1;
+}
+.col-menus {
+  text-align: center;
+}
+.col-menus .menus {
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.col-sosmed {
+  display: flex;
+  justify-content: end;
+}
+.col-sosmed .menus {
+  gap: 1rem;
+}
+.col-sosmed img {
+  width: 24px;
+  height: 24px;
+}
